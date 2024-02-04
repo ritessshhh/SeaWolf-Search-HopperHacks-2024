@@ -1,0 +1,210 @@
+/* Main styles */
+body {
+    margin-top: 13.5rem;
+    color: rgb(0, 0, 0);
+    font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+    text-align: center;
+    min-width: 1028px;
+}
+
+.mytabs label {
+    padding-right: 3px;
+}
+
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 100px;
+    padding-left: 150px;
+}
+
+.mytabs input[type="radio"] {
+    display: none;
+}
+
+.mytabs label {
+    padding: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background: #e2e2e2;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.mytabs .tab {
+    width: 90%;
+    padding: 20px;
+    background: #fff;
+    order: 1;
+    display: none;
+
+
+}
+
+#one {}
+
+.mytabs .tab.first {
+    padding-left: 20px;
+}
+
+.mytabs .tab h2 {
+    font-size: 3em;
+}
+
+.mytabs input[type='radio']:checked+label {
+    background: #fff;
+    border: 1px solid black;
+    border-bottom: 1px solid white;
+    position: relative;
+    z-index: 4;
+}
+
+.mytabs input[type='radio']:checked+label+.tab {
+    display: block;
+    border: 1px solid black;
+    position: relative;
+    z-index: 3;
+    margin-top: -2.1px;
+    border-radius: 0px 5px 5px 5px;
+}
+
+.heading {
+    font-size: 6rem;
+    font-weight: 100;
+    font-style: normal;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.subheading {
+    font-weight: 450;
+    font-style: normal;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.tab h2 {
+    margin-bottom: 10px;
+}
+
+.mytabs label:hover {
+    border: 1px solid rgb(169, 169, 169);
+    border-bottom: 1px solid white;
+    transition: all 0.2s;
+}
+
+.tools-board label {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.tools-board label:hover {
+    border: none;
+}
+
+.drawing-board {
+    border: 1px solid black;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    background: black;
+}
+
+.options li {
+    margin-top: 10px;
+}
+
+.row #colors {
+    margin-top: 10px;
+}
+
+.alert.alert-danger svg {
+    margin-right: 5px;
+}
+
+.tools-board {
+    position: fixed;
+    left: 50%;
+    top: 633px;
+    transform: translate(-340%, -50%);
+    /* -50% moves the element to the left */
+    z-index: 1;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.row {
+    padding-top: 13px;
+}
+
+@media (max-width: 1450px) {
+    .tools-board {
+        position: static;
+        left: auto;
+        top: auto;
+        transform: none;
+        z-index: auto;
+        background-color: inherit;
+        border: none;
+        border-radius: inherit;
+    }
+
+    .mytabs .tab.first {
+        padding-left: 0px;
+    }
+}
+
+.container.text-center {
+    width: 900px;
+}
+
+.container.text-center img {
+    width: 200px;
+    padding: 3px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+
+.container.text-center img:hover {
+    box-shadow: rgba(44, 130, 201, 0.2), 1 0px 3px 8px;
+}
+
+/* Define styles for the image grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* Adjust column width as needed */
+    gap: 10px;
+    /* Adjust the gap between images */
+    justify-items: center;
+}
+
+/* Style for individual images */
+.image-grid img {
+    max-width: 100%;
+    /* Ensure images don't exceed their container width */
+    height: auto;
+    /* Maintain the aspect ratio */
+    cursor: pointer;
+    /* Add a pointer cursor for clickable images */
+}
+
+#lostHeading {
+    margin-right: 10%;
+}
+
+#lostAndFound {
+    width: 200px;
+    position: absolute;
+    mix-blend-mode: multiply;
+    z-index: 999;
+    left: 27%;
+    top: 80px;
+    transform: rotate(-30deg);
+}

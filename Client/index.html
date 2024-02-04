@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Scribble-Solver</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="mytabs">
+        <h2 class="heading">Seawolf Search!<img src="images/Stony_Brook_Seawolves_logo.svg.png" alt="seawolf"
+                style="width: 100px;">
+        </h2>
+        <img src="images/714b0259-2aa4-4882-a172-135f26925937.52fe5cbf18ae15647e68d9fffe95c785.jpeg.png"
+            alt="lost and found" id="lostAndFound">
+        <h5 class="subheading" id="lostHeading">Lost something? Find it in our database.</h5>
+
+        <input type="radio" id="tabfree" name="mytabs" checked="checked">
+        <label for="tabfree" id="one">Image Search</label>
+        <div class="tab first">
+            <h2>Drop your image</h2>
+            <div class="container">
+                <div class="alert alert-primary" role="alert">
+                    Upload an image here and we will search for your item in our database.
+                </div>
+                <div class="mb-3">
+
+                    <input class="form-control" type="file" id="formFile1">
+                    <button type="button" class="btn btn-outline-dark mt-3" id="imageSubmit">Upload Image</button>
+                </div>
+            </div>
+        </div>
+
+        <input type="radio" id="tabsilver" name="mytabs">
+        <label for="tabsilver">Text Search</label>
+        <div class="tab two">
+            <h2>Describe your item</h2>
+            <div class="alert alert-primary" role="alert">
+                Describe your missing item and our AI model will help find it!
+            </div>
+            <div class="input-group input-group-lg">
+                <span class="input-group-text" id="inputGroup-sizing-lg">Text</span>
+                <input type="text" name="equation" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-lg" id="textInput">
+            </div>
+            <button type="submit" class="btn btn-outline-dark mt-3" id="textSubmit">Search</button>
+        </div>
+
+        <input type="radio" id="tabgold" name="mytabs">
+        <label for="tabgold">Found something?</label>
+        <div class="tab three">
+            <h2>Register a lost item</h2>
+            <div class="mb-3">
+                <p>Found something that's lost? No problem, use our AI powered database to find this iteam's owner. Just
+                    upload a
+                    picture and your contact information for the owner to contact. It's that simple.</p>
+                <input class="form-control" type="file" id="formFile2">
+                <div class="input-group mt-3">
+                    <span class="input-group-text">Contact Information</span>
+                    <textarea class="form-control" aria-label="With textarea" id="contactInfo" required></textarea>
+                </div>
+                <button type="button" class="btn btn-outline-dark mt-3" id="uploadButton">Upload Image</button>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center" id="">
+        <div class="image-grid" id="imageContainer">
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
