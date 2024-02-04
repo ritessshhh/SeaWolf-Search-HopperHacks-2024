@@ -1,0 +1,6 @@
+Flask
+Pillow
+scikit-learn
+transformers
+Flask-CORS
+Werkzeug
