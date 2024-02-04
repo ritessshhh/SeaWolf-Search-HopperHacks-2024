@@ -2,6 +2,18 @@
 
 Inspired by the Stony Brook University community's spirit and the frequent tales of lost belongings, we set out to create **Seawolf Search** powered by AI. Our mission was to simplify the recovery of lost items using technology, thus fostering a supportive campus environment.
 
+## How to run?
+```bash
+git clone https://github.com/ritessshhh/SeaWolf-Search-HopperHacks-2024
+cd SeaWolf-Search-HopperHacks-2024
+pip install -r requirements.txt
+cd Server
+python3 server.py
+cd ../Client
+./index.html
+```
+
+
 ## Inspiration
 
 The inspiration behind **Seawolf Search** emerged from a common challenge faced by students and faculty alike within the vibrant yet sprawling campus of Stony Brook University: the frequent misplacement and loss of personal items. From textbooks left in lecture halls to keys dropped on the quad, the inconvenience and stress of losing valuable possessions are experiences shared by many. Recognizing the need for a streamlined, efficient method to reunite individuals with their lost items, we envisioned a platform that not only simplifies the process of reporting and retrieving lost items but also fosters a sense of community and collaboration.
