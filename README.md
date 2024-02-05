@@ -1,4 +1,5 @@
 ## Seawolf Search: Revolutionizing Lost & Found at Stony Brook University
+![hopperhacks](https://github.com/ritessshhh/SeaWolf-Search-HopperHacks-2024/assets/81812754/bb47a6ef-a925-4c85-acb0-3332f9c90468)
 
 Inspired by the Stony Brook University community's spirit and the frequent tales of lost belongings, we set out to create **Seawolf Search** powered by AI. Our mission was to simplify the recovery of lost items using technology, thus fostering a supportive campus environment.
 
